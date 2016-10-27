@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TakeMeOut.MenuPage"
+             xmlns:local="TakeMeOut.MenuPage"
+  Title="Welcome!">
+    <MasterDetailPage.Master>
+      <ContentPage Title="Menu" BackgroundColor="Black" >
+        <StackLayout Orientation="Vertical">
+
+          <Button Clicked="CategoryButton_OnClicked" 
+                  Image="catIcon.png"
+            Text="Categories"
+                  Opacity="0.6"
+                  FontSize="15"  />
+
+          <Button Text="Forum"   Image="forumIcon.png"
+           
+                  Opacity="0.6"
+                  FontSize="15"  />
+
+          <Button Clicked="TellButton_OnClicked" 
+                  Text="Tell a Friend"  Image="tellIcon.png"  Opacity="0.6"
+                  FontSize="15"  
+           />
+
+          <Button   Text="Feedback"
+                Image="feedbackIcon.png"
+           
+                  Opacity="0.6"
+                  FontSize="15"  />
+
+          <Button Clicked="AboutButton_OnClicked" Text="More Apps..."
+                 Image="aboutIcon.png"
+           
+                  Opacity="0.6"
+                  FontSize="15" />
+
+          <Button Text="My Search Settings" 
+                 Image="settingIcon.png"
+           
+                  Opacity="0.6"
+                  FontSize="15" />
+
+        </StackLayout>
+      </ContentPage>
+
+    </MasterDetailPage.Master>
+    <MasterDetailPage.Detail>
+      <local:HomePage />
+
+    </MasterDetailPage.Detail>
+
+  </MasterDetailPage>
